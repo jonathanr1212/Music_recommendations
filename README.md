@@ -135,3 +135,37 @@ Model 1 in the results was better than random guessing which is a solid start to
 Model 2 had a negative Silhoutte score to it may be guessing too wildly however, it was also not too far from 0 where the clusters would overlap.
 
 While the audio features may have not been the discerning factor for the algorithm, more information can be given such as genre, lyrics or other audio data that can strengthen the model and produce more distinct clusters for the recommendation engine.
+
+## For More Information
+See the full analysis in the Jupyter Notebook or review this presentation:
+
+[Modeling Notebook](/eda_model_notebook.ipynb)
+
+[Presentation](/music_rec_presentation.pdf)
+
+## References
+Refer to notations in the notebooks
+
+
+## Additional Info
+For additional info, contact Jonathan Roman at [jonathan.roman1213@gmail.com](mailto:jonathan.roman1213@gmail.com)
+
+
+## Repository Structure
+
+```
+├── data
+├── images
+├── .gitignore
+├── README.md
+├── eda_model_notebook.ipynb
+├── environment.yml
+├── final_recsys_notebook.ipynb
+├── final_recsys_pca_notebook.ipynb
+├── final_recsys_pca_py.py
+├── final_recsys_py.py
+├── finalized_model.pkl
+├── finalized_model_pca.pkl
+├── generating_dataset.ipynb
+└── music_rec_presentation.pdf
+```
