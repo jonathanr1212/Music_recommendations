@@ -30,7 +30,7 @@ with dataset:
                        
 with permissions:
     def get_keys(path):
-        with open("/Users/Jonathan/Documents/Flatiron/phase_5/P5_spotify_recommendations/.secret/spotify_api.json") as f:
+        with open("/Users/Jonathan/Documents/Flatiron/phase_5/P5_music_recommendations/.secret/spotify_api.json") as f:
             return json.load(f)
                     
     keys = get_keys("/Users/Jonathan/.secret/spotify_api.json")
