@@ -78,9 +78,11 @@ Each model type starts with a pipeline that includes a scaler (Standard Scaler),
 Each model type starts with a pipeline that includes a scaler (Standard Scaler), a Dimensionality Reduction Technique (PCA) and a ML Clustering Algorithm (One of the 5 mentioned above.) The default hyperparameters for the model s selected. The hyperparameter for PCA "n_components" is 9 components as it kept more than 80% of the variance of the data.
 
 <u><b>Fourth iteration</b></u>
+
 Each model type starts with a pipeline that includes a scaler (Standard Scaler), a Dimensionality Reduction Technique (UMAP) and a ML Clustering Algorithm (One of the 5 mentioned above.) A parameter grid is created with different hyperparametic features and different values in those feature. The pipeline and parameter grid are then inputted into a GridSearchCV to find the best model. 
 
 <u><b>Fifth iteration</b></u>
+
 Each model type starts with a pipeline that includes a scaler (Standard Scaler), a Dimensionality Reduction Technique (PCA) and a ML Clustering Algorithm (One of the 5 mentioned above.) A parameter grid is created with different hyperparametic features and different values in those feature. The pipeline and parameter grid are then inputted into a GridSearchCV to find the best model to use. 
 
 ## The Evaluation Process
@@ -144,7 +146,21 @@ See the full analysis in the Jupyter Notebook or review this presentation:
 [Presentation](/music_rec_presentation.pdf)
 
 ## References
-Refer to notations in the notebooks
+### Gathering playlist information
+[Max Hilsdorf](https://towardsdatascience.com/how-to-create-large-music-datasets-using-spotipy-40e7242cc6a6)
+
+[Stack Overflow](https://stackoverflow.com/questions/39086287/spotipy-how-to-read-more-than-100-tracks-from-a-playlist)
+
+### Building a recommendation system
+
+[Amol Mavuduru](https://towardsdatascience.com/how-to-build-an-amazing-music-recommendation-system-4cce2719a572)
+
+### Silhouette Scorer for Gridsearch
+
+[Stack Overflow](https://stackoverflow.com/questions/44636370/scikit-learn-gridsearchcv-without-cross-validation-unsupervised-learning)
+
+### UMAP Parameter  Visualization
+[UMAP Documentation](https://umap-learn.readthedocs.io/en/latest/parameters.html)
 
 
 ## Additional Info
