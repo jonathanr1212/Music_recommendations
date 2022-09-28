@@ -89,7 +89,7 @@ Each model type starts with a pipeline that includes a scaler (Standard Scaler),
 
 Unsupervised learning has a slight unique evaluation compared to supervised learning due to the lack of "ground truth" labels. The way each model was evaluated using a  Silhouette Score
 
-The Silhouette Score is a score from -1 to -1. Scores in the negative range typically indicate that a sample was assigned to the wrong cluster. A score around 0 indicates that clusters are overlapping. A score closer to 1 indicates that clusters are more clearly defined. 
+The Silhouette Score is a score from -1 to 1. Scores in the negative range typically indicate that a sample was assigned to the wrong cluster. A score around 0 indicates that clusters are overlapping. A score closer to 1 indicates that clusters are more clearly defined. 
 
 A visualization was produced to also see how well the clusters were produced.
 
@@ -147,13 +147,13 @@ See the full analysis in the Jupyter Notebook or review this presentation:
 
 ## References
 ### Gathering playlist information
-[Max Hilsdorf](https://towardsdatascience.com/how-to-create-large-music-datasets-using-spotipy-40e7242cc6a6)
+[Github - Max Hilsdorf](https://towardsdatascience.com/how-to-create-large-music-datasets-using-spotipy-40e7242cc6a6)
 
 [Stack Overflow](https://stackoverflow.com/questions/39086287/spotipy-how-to-read-more-than-100-tracks-from-a-playlist)
 
 ### Building a recommendation system
 
-[Amol Mavuduru](https://towardsdatascience.com/how-to-build-an-amazing-music-recommendation-system-4cce2719a572)
+[How to build an amazing music recommendation system - Amol Mavuduru](https://towardsdatascience.com/how-to-build-an-amazing-music-recommendation-system-4cce2719a572)
 
 ### Silhouette Scorer for Gridsearch
 
