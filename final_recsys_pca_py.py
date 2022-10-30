@@ -18,6 +18,8 @@ outputs = st.container()
 with header:
     st.title('Welcome to the Spotify Recommendation Engine!')
     st.write("This webpage will allow you to enter a song into it and produce recommendations based on your song.")
+    st.write("Instructions: Enter a song title in the song title section and enter an artist name in the Artist Name section.  Please make sure not to include punctuation.")
+    st.write("For example: A song title such as \"I don't care\" should be entered in \"I dont care\"")
 
              
              
@@ -103,8 +105,8 @@ with outputs:
             return distance
 
 
-xt = new_df.loc[new_df['track_name'] == new_df['track_name'][0],'x']
-yt = new_df.loc[new_df['track_name'] == new_df['track_name'][0],'y']
+xt = new_df.loc[new_df['track_id'] == new_df['track_id'][0],'x']
+yt = new_df.loc[new_df['track_id'] == new_df['track_id'][0],'y']
 
 new_df['relationship'] = new_df.apply(dist, axis =1)
 new_df.drop(["artist_id", "popularity", "track_id", "danceability", "energy", "key", "loudness", "mode", "speechiness", "instrumentalness", "liveness", "valence", "tempo", "duration_ms", "time_signature", "x", "y", "cluster"], axis=1, inplace=True)
